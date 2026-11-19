@@ -122,7 +122,7 @@ void setup() {
   secureClient.setCertificate(AWS_CERT);
   secureClient.setPrivateKey(AWS_PRIVATE_KEY);
 
-  // Configure MQ%
+  // Configure MQTT
   mqttClient.setServer(
     AWS_IOT_ENDPOINT,
     AWS_IOT_PORT
