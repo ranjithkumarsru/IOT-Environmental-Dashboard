@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Environmental Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>IoT Environmental Dashboard</h1>
+            <p>Real-time Temperature and Humidity Monitoring</p>
+        </div>
+        <div class="status">
+            <span class="dot"></span> Device Online
+        </div>
+    </header>
+
+    <main>
+
+        <section class="cards">
+
+            <div class="card temperature">
+                <h3>Temperature</h3>
+                <div class="reading">
+                    <span id="temperature">28.5</span> °C
+                </div>
+                <p>Current Temperature</p>
+            </div>
+
+            <div class="card humidity">
+                <h3>Humidity</h3>
+                <div class="reading">
+                    <span id="humidity">65</span> %
+                </div>
+                <p>Current Humidity</p>
+            </div>
+
+        </section>
+
+        <section class="chart-section">
+            <h2>Environmental Monitoring</h2>
+            <canvas id="tempChart"></canvas>
+            <canvas id="humidityChart"></canvas>
+        </section>
+
+        <section class="history">
+            <h2>Sensor Data History</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Temperature</th>
+                        <th>Humidity</th>
+                    </tr>
+                </thead>
+
+                <tbody id="historyBody"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>IoT Environmental Dashboard | ESP32 Monitoring System</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

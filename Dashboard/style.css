@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+}
+
+header {
+    background: #18263c;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    color: #4db8ff;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #aab8ca;
+}
+
+.status {
+    background: #173b31;
+    color: #55e0a2;
+    padding: 12px 18px;
+    border-radius: 20px;
+}
+
+.dot {
+    display: inline-block;
+    background: #55e0a2;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+main {
+    padding: 35px 5%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 15px;
+    background: #1c2b42;
+    border: 1px solid #34465f;
+}
+
+.card h3 {
+    color: #bdcce0;
+    margin-bottom: 20px;
+}
+
+.reading {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.temperature .reading {
+    color: #ff9b70;
+}
+
+.humidity .reading {
+    color: #4db8ff;
+}
+
+.card p {
+    color: #9aabc0;
+    margin-top: 12px;
+}
+
+.chart-section, .history {
+    background: #1c2b42;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid #34465f;
+}
+
+.chart-section h2, .history h2 {
+    margin-bottom: 20px;
+    color: #4db8ff;
+}
+
+canvas {
+    max-height: 280px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #34465f;
+}
+
+th {
+    color: #4db8ff;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #9aabc0;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 20px 4%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 9px 4px;
+    }
+}

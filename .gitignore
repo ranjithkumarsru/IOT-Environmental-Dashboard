@@ -1,0 +1,13 @@
+# PlatformIO build output and local editor files
+.pio/
+.vscode/
+
+# AWS credentials and device certificates
+AWS_Certificates/
+src/aws_secrets.h
+*.pem
+*.key
+*.crt
+
+# Local configuration
+aws_config.local.h
